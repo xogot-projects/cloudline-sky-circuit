@@ -15,7 +15,7 @@ config/description="A little yellow robot takes itself apart to reconnect a brok
 run/main_scene="res://scenes/ui/title_screen.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
 boot_splash/bg_color=Color(0.52157, 0.81961, 0.99216, 1)
-config/icon="res://icon.svg"
+config/icon="res://project-icon.png"
 
 [autoload]
 
@@ -185,6 +185,10 @@ lighting_lab={
 ])
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [layer_names]
 
 3d_render/layer_20="exempt_from_paint"
@@ -209,6 +213,7 @@ common/physics_interpolation=true
 [rendering]
 
 renderer/rendering_method="mobile"
+textures/vram_compression/import_s3tc_bptc=false
 textures/vram_compression/import_etc2_astc=true
 lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile=1
 anti_aliasing/quality/msaa_3d=2
